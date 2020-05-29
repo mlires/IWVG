@@ -1,0 +1,11 @@
+pipeline {
+   agent any
+   stages {
+      stage('Git Checkout') {
+         steps {
+            // Get some code from a GitHub repository
+            git 'https://github.com/jglick/simple-maven-project-with-tests.git'
+         }
+      }
+   }
+}
